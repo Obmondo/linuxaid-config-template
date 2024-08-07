@@ -1,0 +1,1 @@
+# linuxaid-config-template
