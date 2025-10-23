@@ -34,3 +34,18 @@
       ssh_authorized_keys:
         - "ssh-rsa AAAAB3NzaC1yfshVHrzY61IeSbWhQ== cardno:000474912423"
   ```
+
+### Puppet Modules
+
+* You can add your own modules in the linuxaid-config and it will be picked up by the puppetserver automatically.
+
+  ```raw
+  ls -al modules/customers/
+  total 24
+  drwxrwxr-x 5 foo users 4096 Dec  9  2024 .
+  drwxrwxr-x 3 foo users 4096 Aug 16  2024 ..
+  drwxrwxr-x 3 foo users 4096 Aug 16  2024 data
+  drwxrwxr-x 3 foo users 4096 Jan 30  2025 files
+  -rw-rw-r-- 1 foo users  528 Aug 16  2024 hiera.yaml
+  drwxrwxr-x 3 foo users 4096 Aug 16  2024 lib
+  ```
